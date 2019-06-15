@@ -2,5 +2,5 @@
 const path = require('path') 
 const convert = require('./convert')
 
-convert.csvToJson(path.join(__dirname, 'csv', 'customer-data.csv'), path.join(__dirname, 'json', 'customer-data.JSON'))
+convert.csvToJson(process.argv[2], process.argv[3])
 console.log('CSV file has converted successfully')
